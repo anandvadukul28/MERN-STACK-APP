@@ -52,12 +52,16 @@ useEffect(()=>{
 };
 return(
 <form onSubmit={submit}>
+<table>
+<tbody>
   <tr>
   <td>Name:<input type="text" className="form-control" name="name" onChange={change} value={users.name}/></td>
   <td>Username:<input type="text"  className="form-control" name="username" onChange={change} value={users.username}/></td>
-  <td>Email:<input type="tel" className="form-control" name="email" onChange={change} value={users.email}/></td><br/>
-  <button className="btn btn-outline-primary" type = "submit">Update</button>
-  </tr>
+  <td>Email:<input type="tel" className="form-control" name="email" onChange={change} value={users.email}/></td>
+  </tr></tbody></table>
+    <button className="btn btn-outline-primary" type = "submit">Update</button>
+
+
   </form>
 )
 };

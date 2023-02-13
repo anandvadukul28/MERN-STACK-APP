@@ -11,18 +11,12 @@ export default function CreateUser (props) {
 const [users, setUsers] = useState([
 ]);
 
-
-
 const change = (e) => {
   setUsers({ ...users, [e.target.name]: e.target.value });
 };
 
-
 const submit = (e) => {
     // e.preventDefault();
-
-
-
    alert("Registered Successfully");
     axios
       .post('http://localhost:3000/api/users', users)
@@ -56,7 +50,6 @@ const submit = (e) => {
     <div className="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
     <div className="card card0 border-0">
         <div className="row d-flex">
-
             <div className="col-lg-6">
                 <div className="card2 card border-0 px-4 py-5">
 
@@ -92,24 +85,7 @@ const submit = (e) => {
     </div>
 </div>
 </form>
-{
-//     <div className="card" style={{width: '28rem'}}>
-//   <div className="card-body">
-//     <h5 className="card-title">Sign-In</h5>
-//
-//
-//     <form  onSubmit={submit}>
-//     <label>Name:</label>
-//     <input type="text"  required aria-required="true" name="name"value={users.name} onChange={change}/>  <br/>
-//     <label>Username: </label>
-//     <input type="text"  required aria-required="true" name="username"value={users.username} onChange={change}/> <br/>
-//     <label>Email:</label>
-//     <input type="text" required aria-required="true" name="email" value={users.email} onChange={change}/> <br/>
-//     <button type="submit" classNameName="bt btn-outline-primary mr-2" >REGISTER</button>
-//   </form><br/>
-//   </div>
-// </div>
-}
+
 
   </>
   )

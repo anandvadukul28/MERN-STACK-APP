@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 First run the command:
-### `npm run app` To run the backend. 
+### `npm run app` To run the backend on PORT: 3000
 Second:
 ### `npm start`
 

@@ -1,4 +1,4 @@
 {
   "mongoURI":
-    "mongodb+srv://Mustang:Superman123@mern.h3e7vqp.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://Mustang:*********@mern.h3e7vqp.mongodb.net/?retryWrites=true&w=majority"
 }
